@@ -26,7 +26,7 @@ public class HelthInsurence{
 		return premium;
 	}
 	public double helthConPremium(double premium, int helthCon){
-		return ((premium * helthCon/100) + premium);
+		return (premium + (premium * helthCon/100));
 	}
 	public double habitPremium(double premium, int goodHabit, int badHabbit){
 		return (premium + (premium * (goodHabit-badHabbit)/100));
